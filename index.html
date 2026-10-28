@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=60829deb-08bf-4846-a2fa-43cb28bc1031
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For You ❤️</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- INTRO SCREEN -->
+    <section class="intro">
+      <p class="fade">Hey…</p>
+      <p class="fade delay1">I made something</p>
+      <p class="fade delay2">Just for you</p>
+      <button id="enter">Open ❤️</button>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="hidden">
+      <!-- NAME REVEAL -->
+      <section class="hero">
+        <h1>This is for <span id="name">you</span></h1>
+        <p>From someone who cares deeply.</p>
+      </section>
+
+      <!-- LOVE LETTER -->
+      <section class="letter">
+        <p class="reveal">
+          Happy birthday, beautiful girl. ❤️🎂 You’re as sweet as you are
+          gorgeous. 💕May your smile never fade and your heart always be happy.
+        </p>
+        <p class="reveal">
+          Keep shining, princess. You deserve the world. 👑❤️
+        </p>
+        <p class="reveal">This isn’t just any Day. It’s your day.</p>
+      </section>
+
+      <!-- INTERACTIVE HEART -->
+      <section class="tap">
+        <p>Tap the heart</p>
+        <div id="heart">❤️</div>
+        <p id="secret" class="hidden">
+          If I had to choose again, I’d still choose you.
+        </p>
+      </section>
+
+      <!-- CLOSING -->
+      <section class="closing">
+        <h2>Happy BirthDay</h2>
+        <p>Courtesy oF izuchukwu henry @dev_izuco</p>
+      </section>
+    </main>
+
+    <!-- OPTIONAL MUSIC -->
+    <audio id="music" src="assets/music.mp3" loop></audio>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

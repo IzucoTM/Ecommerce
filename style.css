@@ -1,0 +1,124 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #0e0e0e;
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* INTRO SCREEN */
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #2b0f18, #0e0e0e);
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  opacity: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.fade {
+  animation: fadeIn 1.5s forwards;
+}
+
+.delay1 {
+  animation-delay: 1s;
+}
+.delay2 {
+  animation-delay: 2s;
+}
+
+#enter {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #c9184a;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#enter:hover {
+  transform: scale(1.1);
+}
+
+/* MAIN CONTENT */
+.hidden {
+  display: none;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #c9184a;
+}
+
+.letter {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px 20px;
+  font-size: 1.1rem;
+}
+
+.letter p {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
+}
+
+/* INTERACTIVE HEART */
+.tap {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#heart {
+  font-size: 3rem;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+.closing {
+  padding: 100px 20px;
+  text-align: center;
+  background: #c9184a;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
